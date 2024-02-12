@@ -114,6 +114,7 @@ public class Calculator implements ActionListener{
 	
 	// Main method to instantiate the Calculator class
 	public static void main(String[] args) {
+		@SuppressWarnings("unused")
 		Calculator calc = new Calculator();
 	}
 
@@ -160,7 +161,7 @@ public class Calculator implements ActionListener{
 			textfield.setText(String.valueOf(temp));
 		}
 		
-		// Handles Equals button click
+		// Handles Equals button function
 		if (e.getSource() == equButton) {
 			num2 = Double.parseDouble(textfield.getText());
 			
